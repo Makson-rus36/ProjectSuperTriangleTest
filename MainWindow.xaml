@@ -1,0 +1,50 @@
+﻿<Window x:Class="ProjectSuperTriangleTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectSuperTriangleTest"
+        mc:Ignorable="d"
+        Title="Обучающая система - Прямоугольный треугольник" Height="720" Width="1035">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="103"/>
+            <ColumnDefinition Width="406"/>
+            <ColumnDefinition Width="167"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="61*"/>
+            <RowDefinition Height="46"/>
+            <RowDefinition Height="114*"/>
+            <RowDefinition Height="341"/>
+            <RowDefinition Height="127*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Fon.png"/>
+        </Grid.Background>
+
+        <StackPanel Grid.Column="1" Margin="0" Grid.Row="3" Grid.ColumnSpan="2">
+            <Button x:Name="BtnTeory" Style="{DynamicResource DefaultButtonStyle}" Height="102" Margin="0,0,0,5" Click="BtnTeory_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="TeoryBtnMenu.png" Stretch="Uniform" AlignmentX="Left"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="BtnTest" Style="{DynamicResource DefaultButtonStyle}" Height="102" Margin="0,0,0,5" Click="BtnTest_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="TestBrnMenu.png" Stretch="Uniform" AlignmentX="Left"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="BtnRating" Style="{DynamicResource DefaultButtonStyle}" Height="90" Margin="0,0,0,5" Click="BtnRating_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="RatingBtnMenu.png" AlignmentX="Left" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+
+
+        </StackPanel>
+        <Image x:Name="image" Grid.Column="2" Source="TriangleMenu.png" HorizontalAlignment="Right" Height="46" Grid.Row="1" VerticalAlignment="Bottom" Width="496" Margin="0" Grid.ColumnSpan="2"/>
+
+
+    </Grid>
+</Window>
