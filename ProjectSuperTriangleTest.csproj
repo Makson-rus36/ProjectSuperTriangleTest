@@ -265,7 +265,9 @@
     <Resource Include="NextQuest.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="TestXML.xml" />
+    <Resource Include="TestXML.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="IconMain.ico" />
