@@ -265,7 +265,7 @@
     <Resource Include="NextQuest.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="bin\Debug\TestXML.xml" />
+    <Resource Include="TestXML.xml" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="IconMain.ico" />
@@ -281,6 +281,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
