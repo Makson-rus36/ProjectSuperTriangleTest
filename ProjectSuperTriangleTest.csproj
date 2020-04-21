@@ -287,5 +287,9 @@
   <ItemGroup>
     <Folder Include="bin\Debug\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TriangleSystem\TeoryXML.xml" />
+    <Resource Include="TriangleSystem\TestXML.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
